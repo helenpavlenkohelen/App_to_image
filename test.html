@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			const data = {
+				hits: [
+					{
+						name: "ima1",
+						link: "link1",
+					},
+					{
+						name: "ima2",
+						link: "link2",
+					},
+					{
+						name: "ima3",
+						link: "link3",
+					},
+				],
+			};
+
+			//v4
+			const images = data.hits.map((image) => image.link);
+			console.log(images);
+
+			//v3
+			// const images = [];
+			// for (const image of data.hits) {
+			// 	images.push(image.link);
+			// }
+			// console.log(images);
+
+			//v2
+			// const images = [];
+			// for (let i = 0; i < data.hits.length; i++) {
+			// 	images.push(data.hits[i].link);
+			// }
+			// console.log(images);
+			// );
+
+			// v1
+			// images.push(
+			// 	data.hits[0].link,
+			// 	data.hits[1].link,
+			// 	data.hits[2].link
+			// );
+
+			//["link1","link2","link3",]
+		</script>
+	</body>
+</html>
